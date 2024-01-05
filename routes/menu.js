@@ -8,8 +8,8 @@ const router = express.Router();
 router
   .route("/")
   .post(
-    body("nom").isLength({ min: 3, max: 30 }),
-    body("paysOrigine").isLength({ min: 3, max: 30 }),
+    body("nom").isLength({ min: 3, max: 100 }),
+    body("paysOrigine").isLength({ min: 3, max: 100 }),
     addOnce
   )
   .get(getAll);
