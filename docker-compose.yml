@@ -2,14 +2,14 @@ version: "3"
 services:
   api:
     #  image:node:18
-    # image: tahanicherif/testtahani:2
+    image: tahani:3
     build: .
     environment:
       - NODE_ENV=production
       - DB_URL=mongodb://mongo
       - PORT=9090
     ports:
-      - 9090:8080
+      - 9090:9090
     networks:
       - app7
     depends_on:

@@ -1,4 +1,4 @@
-FROM node:18.18.2
+FROM node:18.12.0-alpine3.15
 
 LABEL maintainer="test tahani"
 
